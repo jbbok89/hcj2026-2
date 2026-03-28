@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h3 {
+        color: black;
+      }
+      video {
+        max-width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="list_page.html">List</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="media_page.html">Media</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <h1>비디오와 오디오를 한번에!</h1>
+        <br />
+        <h3>오디오</h3>
+        <audio controls>
+          <source src="vidio/recoding.m4a" type="audio/mpeg" />
+        </audio>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h3>비디오</h3>
+        <p>출처 : https://www.youtube.com/@jimo3324</p>
+        <video width="100%" max-width="600px" controls>
+          <source src="vidio/v_vidio.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

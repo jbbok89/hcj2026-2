@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timetable</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        color: black;
+      }
+      th,
+      td {
+        border: 1px solid #dddddd;
+        background-color: white;
+        padding: 8px;
+        text-align: center;
+        width: 100px;
+      }
+      th {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 메뉴 영역 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="list_page.html">List</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="media_page.html">Media</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <h1>강의 시간표</h1>
+        <table>
+          <tr>
+            <th>교시</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+          </tr>
+          <tr>
+            <td>1교시</td>
+            <td rowspan="2">English for Global Citizens III</td>
+            <td rowspan="2">보안자료구조</td>
+            <td rowspan="2">객체지향프로그래밍</td>
+            <td rowspan="4">네트워크보안</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2교시</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3교시</td>
+            <td></td>
+            <td rowspan="2">웹프로그래밍</td>
+            <td rowspan="2">서버구축및운영실습</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4교시</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6교시</td>
+            <td rowspan="2">보안자료구조</td>
+            <td rowspan="2">객체지향프로그래밍</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>7교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>8교시</td>
+            <td rowspan="2">웹프로그래밍</td>
+            <td rowspan="2">서버구축및운영실습</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>9교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        color: black;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #dddddd;
+        background-color: white;
+        padding: 12px;
+        text-align: center;
+      }
+      th {
+        background-color: lightgrey;
+      }
+      button {
+        margin: 2px;
+        padding: 4px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="list_page.html">List</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="media_page.html">Media</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <h1>수강신청 장바구니</h1>
+
+        <table>
+          <thead>
+            <tr>
+              <th>이수구분</th>
+              <th>과목명</th>
+              <th>학점</th>
+              <th>시간</th>
+              <th>담당교수</th>
+              <th>관리</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>전공필수</td>
+              <td>네트워크보안</td>
+              <td>3</td>
+              <td>목(1,2,3,4)</td>
+              <td>강선범</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공필수</td>
+              <td>네트워크보안</td>
+              <td>3</td>
+              <td>목(5,6,7,8)</td>
+              <td>강선범</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공필수</td>
+              <td>서버구축및운영실습</td>
+              <td>3</td>
+              <td>화(6,7),수(1,2)</td>
+              <td>양환석</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공필수</td>
+              <td>서버구축및운영실습</td>
+              <td>3</td>
+              <td>화(8,9),수(3,4)</td>
+              <td>양환석</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공선택</td>
+              <td>웹프로그래밍</td>
+              <td>3</td>
+              <td>월(6,7),화(1,2)</td>
+              <td>이병천</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공선택</td>
+              <td>웹프로그래밍</td>
+              <td>3</td>
+              <td>월(8,9)),화(3,4)</td>
+              <td>이병천</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공선택</td>
+              <td>보안자료구조</td>
+              <td>3</td>
+              <td>월(6,7),화(1,2)</td>
+              <td>유승재</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공선택</td>
+              <td>보안자료구조</td>
+              <td>3</td>
+              <td>월(8,9),화(3,4)</td>
+              <td>유승재</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공선택</td>
+              <td>객체지향프로그래밍</td>
+              <td>3</td>
+              <td>화(6,7),수(1,2)</td>
+              <td>김성규</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td>전공선택</td>
+              <td>객체지향프로그래밍</td>
+              <td>3</td>
+              <td>화(8,9),수(3,4)</td>
+              <td>김성규</td>
+              <td>
+                <button onclick="alert('신청되었습니다.')">수강</button>
+                <button onclick="alert('삭제되었습니다.')">삭제</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

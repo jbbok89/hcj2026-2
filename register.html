@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      fieldset {
+        margin-left: 20px;
+        max-width: 600px;
+      }
+      legend {
+        margin-left: 20px;
+        color: black;
+      }
+      input {
+        margin-left: 20px;
+      }
+      label {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="list_page.html">List</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="media_page.html">Media</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <h1>사용자 등록</h1>
+        <form>
+          <fieldset>
+            <legend>기본 정보</legend>
+            <label for="username">아이디:</label><br />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="아이디 입력"
+            /><br />
+
+            <label for="pwd">비밀번호:</label><br />
+            <input type="password" id="pwd" name="pwd" /><br />
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>부가 정보</legend>
+            <label>관심 분야:</label><br />
+            <input type="checkbox" id="web" name="interest" value="web" />
+            <label for="web">웹</label>
+
+            <input type="checkbox" id="system" name="interest" value="system" />
+            <label for="system">시스템</label>
+
+            <input
+              type="checkbox"
+              id="network"
+              name="interest"
+              value="network"
+            />
+            <label for="network">네트워크</label><br />
+
+            <input type="checkbox" id="ai" name="interest" value="ai" />
+            <label for="ai">AI</label><br />
+
+            <br />
+            <label for="email">이메일:</label><br />
+            <input type="email" id="email" name="email" />
+          </fieldset>
+
+          <br />
+          <input type="submit" value="등록 하기" />
+          <input type="reset" value="다시 쓰기" />
+        </form>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
