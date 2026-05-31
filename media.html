@@ -1,16 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .video-container {
+        margin-top: 20px;
+      }
+      iframe {
+        border: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>Audio</h1>
-    <audio controls>
-      <source src="horse.ogg" type="audio/ogg" />
-      <source src="horse.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="list.html">List</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <h1>뉴에이지 음악</h1>
+        <div class="video-container">
+          <iframe
+            width="700"
+            height="394"
+            src="https://www.youtube.com/embed/gEpgxHvVD_s?autoplay=1&mute=1&loop=1&playlist=gEpgxHvVD_s"
+            title="YouTube video player"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <h5>출처 : https://www.youtube.com/watch?v=gEpgxHvVD_s</h5>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>

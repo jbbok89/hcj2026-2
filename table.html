@@ -1,72 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        /* width: 100%; */
-      }
-
-      td,
-      th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-
-      /* tr:nth-child(even) { 
-        background-color: #dddddd;
-      }*/
+        table, th, td{
+            border: 1px solid black;
+        }
     </style>
-  </head>
-  <body>
-    <table>
-      <caption>
-        상품 구성
-      </caption>
-      <thead>
+</head>
+<body>
+    <table width="100%">
+        <caption>상품 구성</caption>
         <tr>
-          <th>용도</th>
-          <th>중량</th>
-          <th>갯수</th>
-          <th>가격</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td rowspan="2">선물용</td>
-          <td>3kg</td>
-          <td>11-16</td>
-          <td>35,000원</td>
+            <th>용도</th>
+            <th>중량</th>
+            <th>개수</th>
+            <th>가격</th>
         </tr>
         <tr>
-          <td>5kg</td>
-          <td>18-26</td>
-          <td>52,000원</td>
+            <th rowspan="2">선물용</th>
+            <th>3kg</th>
+            <th>11-16</th>
+            <th>35,000원</th>
         </tr>
         <tr>
-          <td rowspan="2">가정용</td>
-          <td>3kg</td>
-          <td>11-16</td>
-          <td>30,000원</td>
+            <th>5kg</th>
+            <th>18-26</th>
+            <th>52,000원</th>
         </tr>
         <tr>
-          <td>5kg</td>
-          <td>18-26</td>
-          <td>47,000원</td>
+            <th rowspan="2">가정용</th>
+            <th>3kg</th>
+            <th>11-16</th>
+            <th>35,000원</th>
         </tr>
-      </tbody>
-      <tfoot>
         <tr>
-          <td>합계</td>
-          <td colspan="2"></td>
-          <td>147,000원</td>
+            <th>5kg</th>
+            <th>18-26</th>
+            <th>52,000원</th>
         </tr>
-      </tfoot>
+        <tr>
+            <td>5kg</td>
+            <td colspan="2">18-26 47,000원</td>
+        </tr>
     </table>
-  </body>
+</body>
 </html>
